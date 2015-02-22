@@ -7,7 +7,7 @@ Redmine::Plugin.register :redmine_closes_resolved_issues do
   description 'This is a plugin for Redmin, which closes resolved issues after x days.'
   version '0.0.1'
   url ''
-  author_url ''
+  author_url 'https://github.com/Jogi1j/redmine_closes_resolved_issues'
 
   settings :default => {'empty' => true}, :partial => 'settings/closes_resolved_issues_settings'
 end
