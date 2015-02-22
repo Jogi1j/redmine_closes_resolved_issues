@@ -1,0 +1,14 @@
+<h2>Closes Resolved Issues Controller</h2>
+
+
+<% @issues.each do |issue| %>
+<p>
+  ID: <%= issue.id %>,
+  Status: <%= issue.status_id %>,
+  <%= if issue.status_id == 1 then 'New' end %>
+  <%= if issue.status_id == 3 then 'Resolved' end %>
+  <%= if issue.status_id == 5 then 'Closed' end %>
+  Update: <%= issue.updated_on %> .
+
+</p>
+<% end %>
